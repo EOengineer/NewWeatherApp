@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 
   get 'current_weather', controller: :weathers, action: :index
-
+  post 'current_weather', controller: :weathers, action: :index
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

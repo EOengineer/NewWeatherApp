@@ -1,12 +1,11 @@
-Hello
 
 
-<%= form_tag("/current_weather", method: "get") do %>
+
+<%= form_tag("/current_weather", remote: true, id: 'zip_code') do %>
   <%= label_tag(:weather, "zip_code") %>
   <%= text_field_tag(:zip_code) %>
   <%= submit_tag("Submit zip") %>
 <% end %>
 
-
-<h1><%= @weather["display_location"]["full"] %><h1>
+<div id="current_results"><%= render 'current' %></div>
 
