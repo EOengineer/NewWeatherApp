@@ -6,6 +6,11 @@ class WeathersController < ApplicationController
     else
       @weather = Weather.new.location
     end
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.js
+    end
   end
 
 end

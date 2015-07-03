@@ -1,0 +1,27 @@
+<section class="heading">
+  <h1><%= @weather["display_location"]["full"] %><h1>
+  <h1><%= @weather["weather"] %></h1>
+  <h1><%= @weather["temp_f"] %> F / <%= @weather["temp_c"] %> C<br></h1>
+  feels_like: <%= @weather["feelslike_f"] %><br>
+
+</section>
+
+  <section class="locale">
+  last_updated: <%= @weather["observation_time"] %><br>
+  local_time: <%= @weather["local_time_rfc822"] %><br>
+</section>
+  icon: <%= @weather["icon_url"] %><br>
+
+
+  relative_humidity: <%= @weather["relative_humidity"] %><br>
+  wind_intensity: <%= @weather["wind_string"] %><br>
+  wind_direction: <%= @weather["wind_dir"] %><br>
+  wind_speed: <%= @weather["wind_mph"] %><br>
+  wind_gust_speed: <%= @weather["wind_gust_mph"] %><br>
+  barometric_pressure: <%= @weather["pressure_in"] %><br>
+  dewpoint: <%= @weather["dewpoint_f"] %><br>
+
+  visibility: <%= @weather["visibility_m"] %><br>
+  uv_index: <%= @weather["UV"] %><br>
+  precip_today: <%= @weather["precip_today_in"] %><br>
+  hour_precip: <%= @weather["precip_1hr_in"] %><br>
